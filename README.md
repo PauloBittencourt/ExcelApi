@@ -8,7 +8,7 @@
 
 - [Principais tecnologias utilizadas](#principais-tecnologias-utilizadas)
 
-- [Acesso ao projeto](#acesso-ao-projeto)
+- [Estrutura da aplicação](#estrutura-da-aplicação)
 
 - [Abrir e rodar a aplicação](#abrir-e-rodar-a-aplicação)
 
@@ -25,14 +25,9 @@ As avaliações são obtidas através de um arquivo CSV onde contém o nome do f
 
 :heavy_check_mark: `Funcionalidade 1:` Criar o registro de um filme no banco de dados MongoDB, que se encontra na rota : http://127.0.0.1:3000/v1/api/create-movie e deve conter o seguinte corpo com um JSON usando método POST 
 Segue um exemplo:
-{
-               "name": 0,
-                "gender": "Anime",
-                "duration": "190",
-                "director": "Yusuke Murata",
-                "actors": "Saitama",
-				"code": "A5343"
-}
+
+![image](https://user-images.githubusercontent.com/77074764/220195943-d8535792-acb2-48e3-b5e1-5e06b40b5c55.png)
+
 Deve retornar um JSON com esse mesmo corpo.
 
 :heavy_check_mark: `Funcionalidade 2:` Criar um registro de avalições de filmes no banco de dados MongoDB na seguinte rota : http://127.0.0.1:3000/v1/api/create-movie-rating utilizando o método POST, o CSV desse projeto se encontra na pasta ./src/csvFiles/movieRating.csv .
@@ -40,37 +35,12 @@ Deve retornar um JSON com as avaliações desse arquivo CSV.
 
 :heavy_check_mark: `Funcionalidade 3:` Obter o registro de um filme e junto deve vir as avaliações desse filme na seguinte rota http://127.0.0.1:3000/v1/api/get-movie utilizando o método POST.
 Exemplo de retorno : 
-{
-	"data": {
-		"getMovie": [
-			{
-				"_id": "63f153124daabb418b03f23e",
-				"name": "Karate Kid",
-				"gender": "Drama",
-				"duration": "130",
-				"director": "Shinji Mikami",
-				"actors": "Daniel San",
-				"code": "A5340",
-				"__v": 0
-			}
-		],
-		"getMovieRating": [
-			{
-				"_id": "63f2bb93635b2e273975818f",
-				"name": "Karate Kid",
-				"gender": "Drama",
-				"score": "10",
-				"evaluatorName": "Paulo Bittencourt",
-				"observation": "Um filme que fez parte da minha infância",
-				"code": "A5340",
-				"__v": 0
-			}
-		]
-	}
-}
+
+![image](https://user-images.githubusercontent.com/77074764/220196195-ec4e5592-763b-42fc-b73f-8c9cd29c30b9.png)
+
 
 ## Estrutura da aplicação
-(https://user-images.githubusercontent.com/77074764/220178317-38f2cc07-00d0-4ea0-9f34-1392e88eaec1.jpg)
+![image](https://user-images.githubusercontent.com/77074764/220178317-38f2cc07-00d0-4ea0-9f34-1392e88eaec1.jpg)
 
 ## Principais tecnologias utilizadas
 
