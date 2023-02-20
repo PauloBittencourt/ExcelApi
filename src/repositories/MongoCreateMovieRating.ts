@@ -8,8 +8,7 @@ export class MongoCreateMovieRatingRepository implements ICreateMovieRatingRepos
         return CreateMovieRatingModel.create(params);
     };
 
-    async get(params: IGetMovieParams): Promise<CreateMovieRating[]>{
+    async get(params: IGetMovieParams): Promise<CreateMovieRating[]> {
         return CreateMovieRatingModel.find(params);
     };
-
 };

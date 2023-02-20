@@ -1,6 +1,5 @@
 import { CreateMovieRating } from "../entities/CreateMovieRatingEntity";
 
-
 export interface ICreateMovieRatingParams {
     name: string;
     gender: string;
@@ -12,7 +11,7 @@ export interface ICreateMovieRatingParams {
 
 export interface IGetMovieParams {
     code: string;
-  }
+};
 
 export interface ICreateMovieRatingRepository {
     save(params: ICreateMovieRatingParams): Promise<CreateMovieRating[]>;

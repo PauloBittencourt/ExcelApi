@@ -1,7 +1,7 @@
 import { app } from './app';
 import { startDB } from './src/repositories/database/mongodb';
 
-startDB()
+startDB();
 
 app.listen(3000);
 

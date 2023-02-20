@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { GetMovieUseCase } from "./GetMovieUseCase";
 
-
 export class GetMovieController {
     constructor(private getMovieUseCase: GetMovieUseCase) { }
 
@@ -12,6 +11,10 @@ export class GetMovieController {
             const { code } = request.body;
 
             const data = await this.getMovieUseCase.execute({ code });
+
+            if (!code) {
+                throw new Error('code is required')
+            };
 
             return response.status(201).json({
                 data: data

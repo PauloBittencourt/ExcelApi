@@ -3,9 +3,9 @@ import { MongoCreateMovieRatingRepository } from './../../repositories/MongoCrea
 import { GetMovieController } from './GetMovieController';
 import { GetMovieUseCase } from './GetMovieUseCase';
 
-const mongoCreateMovieRepository= new MongoCreateMovieRepository()
+const mongoCreateMovieRepository = new MongoCreateMovieRepository()
 const mongoCreateMovieRatingRepository = new MongoCreateMovieRatingRepository()
-const getMovieUseCase = new GetMovieUseCase( mongoCreateMovieRatingRepository, mongoCreateMovieRepository);
+const getMovieUseCase = new GetMovieUseCase(mongoCreateMovieRatingRepository, mongoCreateMovieRepository);
 const getMovieController = new GetMovieController(getMovieUseCase);
 
 export { getMovieUseCase, getMovieController };

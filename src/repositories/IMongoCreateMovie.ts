@@ -11,7 +11,7 @@ export interface ICreateMovieParams {
 
 export interface IGetMovieParams {
   code: string;
-}
+};
 
 export interface ICreateMovieRepository {
   save(params: ICreateMovieParams): Promise<CreateMovie>;

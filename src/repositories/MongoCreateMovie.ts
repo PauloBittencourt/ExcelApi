@@ -10,5 +10,5 @@ export class MongoCreateMovieRepository implements ICreateMovieRepository {
 
     async get(params: IGetMovieParams): Promise<CreateMovie> {
         return CreateMovieModel.find(params)
-    }
-}
+    };
+};

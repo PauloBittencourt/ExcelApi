@@ -10,8 +10,8 @@ export class GetMovieUseCase {
 
     async execute(data: GetMovieDTO) {
         try {
-            const getMovie = await this.mongoCreateMovieRepository.get(data)
-            const getMovieRating = await this.mongoCreateMovieRatingRepository.get(data)
+            const getMovieRating = await this.mongoCreateMovieRepository.get(data)
+            const getMovie = await this.mongoCreateMovieRatingRepository.get(data)
 
             return {getMovie , getMovieRating}
         } catch (error) {

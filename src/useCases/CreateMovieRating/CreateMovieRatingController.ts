@@ -16,13 +16,11 @@ export class CreateMovieRatingController {
                     return jsonObj
                 })
 
-            console.log('jsonObjList', jsonObjList);
+            if (!jsonObjList) {
+                throw new Error ('Unable to save movie rating')
+            }
 
-            const data = await this.CreateMovieRatingUseCase.execute(
-                (
-                    jsonObjList
-                )
-            );
+            const data = await this.CreateMovieRatingUseCase.execute((jsonObjList));
 
             return response.status(201).json(data);
         } catch (err) {
