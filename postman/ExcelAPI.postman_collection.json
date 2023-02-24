@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "976f6f29-e7ab-4407-979e-d0276fa1fc79",
+		"name": "ExcelAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20468874"
+	},
+	"item": [
+		{
+			"name": "Get Movie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"A5343\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/v1/api/get-movie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"api",
+						"get-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"name\": \"Jiban\",\r\n                \"gender\": \"Tokusatsu\",\r\n                \"duration\": \"135\",\r\n                \"director\": \"Yusuke Murata\",\r\n                \"actors\": \"Saitama\",\r\n                \"code\": \"A5347\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/v1/api/create-movie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"api",
+						"create-movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Movie Rating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/v1/api/create-movie-rating",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"api",
+						"create-movie-rating"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
