@@ -8,7 +8,7 @@ export class GetMovieController {
 
         try {
 
-            const { code } = request.body;
+            const { code } = request.query as any;
 
             const data = await this.getMovieUseCase.execute({ code });
 
