@@ -33,7 +33,7 @@ Deve retornar um JSON com esse mesmo corpo.
 :heavy_check_mark: `Funcionalidade 2:` Criar um registro de avalições de filmes no banco de dados MongoDB na seguinte rota : http://127.0.0.1:3000/v1/api/create-movie-rating utilizando o método POST, o CSV desse projeto se encontra na pasta ./src/csvFiles/movieRating.csv .
 Deve retornar um JSON com as avaliações desse arquivo CSV.
 
-:heavy_check_mark: `Funcionalidade 3:` Obter o registro de um filme e junto deve vir as avaliações desse filme na seguinte rota http://127.0.0.1:3000/v1/api/get-movie utilizando o método POST.
+:heavy_check_mark: `Funcionalidade 3:` Obter o registro de um filme e junto deve vir as avaliações desse filme na seguinte rota http://127.0.0.1:3000/v1/api/get-movie utilizando o método GET.
 Exemplo de retorno : 
 
 ![image](https://user-images.githubusercontent.com/77074764/220196195-ec4e5592-763b-42fc-b73f-8c9cd29c30b9.png)
